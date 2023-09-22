@@ -7,6 +7,8 @@ import Order from './components/Order/Order';
 import Inventory from './components/Inventory/Inventory';
 import About from './components/About/About';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
         <Route path='/orders' element={<Order></Order>}></Route>
         <Route path='/inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
       </Routes>
 
